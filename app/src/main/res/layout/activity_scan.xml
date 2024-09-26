@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Label atau instruksi untuk pengguna -->
+    <TextView
+        android:id="@+id/scan_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil QR Code akan muncul di sini"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Placeholder untuk area pemindaian (ini bersifat simbolik) -->
+
+    <!-- Hasil scan akan ditampilkan di bawah area scan -->
+    <TextView
+        android:id="@+id/scan_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil QR Code akan muncul di sini"
+        android:textSize="16dp"
+        android:layout_below="@id/scan_instruction"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
